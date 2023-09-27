@@ -7,11 +7,14 @@
     */
 
     //Entrada
-
-
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let BebidasSemAlcool = [];
     //Processamento
-
+    for (const bebida of bebidas) {
+        let alcool = prompt(`Essa bebida tem alcool ("S" ou "N"): ${bebida}`).trim().toUpperCase();
+        if(alcool == "N") BebidasSemAlcool.push(bebida); 
+    }
 
     //Saída
-
+    alert(`Suas opções são: ${BebidasSemAlcool.join(", ")}`);
 </script>
